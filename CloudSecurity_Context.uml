@@ -1,17 +1,28 @@
-@startuml
+@startuml CloudSecurity_Context
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 HIDE_STEREOTYPE()
+Title Cloud Security Context Diagram (C4 Model)
 
-Person(user, "User", "Consumer of service")
-Person(workforceAdmin, "Admin", "Person who builds, maintains or operates services")
-
-System_Boundary(boundaryCloud,"Public") {
-    System(serviceCloud,"Services","Software interfaces providing information and access to functions",$link="CloudSecurity_Services_Components.uml")
+Boundary(boundaryUntrusted,"Untrusted"){
+    Person(user, "User", "Consumer of service")
 }
-Boundary(title,"Cloud Security Context Diagram (C4)")
+
+Boundary(boundaryTrusted,"Trusted Location and Device"){
+    Person(workforceAdmin, "Admin", "Person who builds, maintains or operates services")    
+}
+
+Boundary(boundaryCloud,"Public Cloud") {
+    System(serviceCloud,"Services","Software interfaces providing information and access to functions",$link="CloudSecurity_Containers.svg")
+}
+
+Boundary(boundaryLocal,"Private") {
+    System(servicePrivate,"Services","Software interfaces to local data and functions")
+}
+
 Rel(user,serviceCloud,"Uses","HTTPS")
 Rel(workforceAdmin,serviceCloud,"Uses","HTTPS")
+BiRel(serviceCloud,servicePrivate,"HTTPS, VPN")
 
 @enduml

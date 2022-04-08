@@ -1,8 +1,10 @@
-@startuml
+@startuml CloudSecurity_Components
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 HIDE_STEREOTYPE()
+Title Cloud Security Component Diagram (C4 Model)
+Boundary(title,"Cloud Security Component Diagram (C4 Model)")
 
 Person(user, "User", "Consumer of service")
 Person(workforceAdmin, "Admin", "Person who builds, maintains or operates services")

@@ -1,0 +1,26 @@
+@startuml CloudSecurity_Containers
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+HIDE_STEREOTYPE()
+SHOW_FLOATING_LEGEND()
+
+Title Cloud Security Container Diagram (C4 Model)
+
+Boundary(boundaryUntrusted,"Untrusted"){
+    Person(userWeb, "User", "Consumer of service")
+}
+
+Boundary(boundaryCloud,"Public Cloud") {
+    System_Ext(dns,"DNS")
+    Container(containerWeb,"Web Services")
+    Container(containerSecAppNet,"Application & Network Protection")
+    BiRel(containerSecAppNet,containerWeb,"Safe Data")
+    Boundary(boundaryAPI,"Business Logic"){
+        Container(containerAPI,"APIs")    
+    }
+    BiRel(containerWeb,containerAPI,"REST/SOAP")
+}
+
+Rel(userWeb,boundaryCloud,"Requests")
+@enduml
