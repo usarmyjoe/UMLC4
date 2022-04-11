@@ -1,18 +1,94 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="194px" preserveAspectRatio="none" style="width:492px;height:194px;background:#FFFFFF;" version="1.1" viewBox="0 0 492 194" width="492px" zoomAndPan="magnify"><defs/><g><!--MD5=[79962b31ee201ecd83b00400576c785b]
-cluster boundaryCloud--><rect fill="#FFFFFF" height="181" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="244" x="242" y="7"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="48" x="340" y="25.6094">Public</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="340.5" y="41.582">[System]</text><!--MD5=[4d26ad7d8a92e434616b27b018aa42b4]
-entity serviceCloud--><a href="CloudSecurity_Components.svg" target="_top" title="CloudSecurity_Components.svg" xlink:actuate="onRequest" xlink:href="CloudSecurity_Components.svg" xlink:show="new" xlink:title="CloudSecurity_Components.svg" xlink:type="simple"><rect fill="#1168BD" height="110.5625" style="stroke:#3C7FC0;stroke-width:1.5;" width="211" x="258.5" y="61"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="66" x="331" y="87.6094">Services</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="366" y="105.6582"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="272.5" y="123.2676">Software interfaces providing</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="281" y="140.877">information and access to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="335.5" y="158.4863">functions</text></a><!--MD5=[2d03e9f95060c6040f705428ab007de8]
-entity title--><rect height="60.25" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="216" x="7" y="86.5"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="192" x="17" y="113.1094">Cloud Security Container</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="149" x="40.5" y="133.2344">Diagram (C4 Model)</text><!--MD5=[caf0101ba71c9a8898a47023cb42377f]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1194px" preserveAspectRatio="none" style="width:1019px;height:1194px;background:#FFFFFF;" version="1.1" viewBox="0 0 1019 1194" width="1019px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="366" x="320" y="18.6855">Cloud Security Container Diagram (C4 Model)</text><!--MD5=[b5445f77dbd7b7eda27b2e72f231d9a2]
+cluster boundaryUntrusted--><rect fill="#FFFFFF" height="201" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="186" x="605" y="29.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="138" x="629" y="48.25">Untrusted/Internet</text><!--MD5=[79962b31ee201ecd83b00400576c785b]
+cluster boundaryCloud--><rect fill="#FFFFFF" height="894" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="664" x="7" y="294.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="116" x="281" y="313.25">Cloud Services</text><!--MD5=[498e81539e360585e8afd1f95d431d53]
+cluster systemApp--><rect fill="#66CCFF" height="669" style="stroke:#3C7FC0;stroke-width:1.5;" width="228" x="39" y="487.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="124" x="91" y="506.25">Web Application</text><!--MD5=[acccb3889f77b81f35522a5f86c69bed]
+cluster boundaryUX--><rect fill="#FFFFFF" height="148" style="stroke:#FF0000;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="156" x="71" y="542.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="70" x="114" y="561.25">Frontend</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="100.5" y="577.2227">[User Experience]</text><!--MD5=[fdf4a04bcc5dd8f348a913e84e2625cf]
+cluster boundaryApp--><rect fill="#FFFFFF" height="148" style="stroke:#FF0000;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="118" x="80" y="754.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="68" x="105" y="773.25">Backend</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="93" y="789.2227">[Business Logic]</text><!--MD5=[3ef4c13d8a455333145bfca0adceaa82]
+cluster boundaryData--><rect fill="#FFFFFF" height="157" style="stroke:#FF0000;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="142" x="71" y="967.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="35" x="124.5" y="986.25">Data</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="107" x="88.5" y="1002.2227">[Information Stores]</text><!--MD5=[e9238282433e4448fb2b7b738872a777]
+cluster boundaryAdmin--><rect fill="#FFFFFF" height="118" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="244" x="403" y="572.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="168" x="441" y="591.25">Management Services</text><!--MD5=[51af4e3437e6000a73d3f83d7dfc667b]
+cluster boundarySvcs--><rect fill="#FFFFFF" height="134" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="183" x="830" y="776.6406"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="133" x="855" y="795.25">External Services</text><!--MD5=[0dcfe7f01dff50bc1f3904d28f54d084]
+entity userWeb--><rect fill="#08427B" height="123.3438" style="stroke:#073B6F;stroke-width:1.5;" width="154" x="621" y="91.6406"/><image height="48" width="48" x="674" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABuUlEQVR42u2Yv0oEMRDGp/QRfIR7BVs7Gx9AH0CwtrtKLNXSRsRSG8HCxkbQVrSykoOrzlILC9v4gwMRNptMMsnu3nHDFMcSLh/f/PsmsrY5HpTLUgHaOri8uHt+eJm8vs/wm8e38fn9aPekB0D7p7df3z+uxYC4sXfWEaD17SPIcAqDreqAQBMgpmnHV091ASm5+W8EtxYgQuCyDF7LA+JPXa5RieUBwbwzWHlAVLIFEB2rMKCk4rK0AC0gZzN9/S8soOnHpwWQvhtpATE4h5XUlrKnIKp06uxCS5poCzs6stvjzuF1XfmRVG4ZkihHMSp5SuXGJGG5LEAVPSIpb4qJfIQzQeF6OMORGXSHbCjLuAb1CYhti7whQHQ5PLrlcHh+kiAyN/RxFE0/9OYvH+dJw33gw/nB4bYa5Ltmokl4MTXqMi+sMFtSfFBEDWoD67bUkPSa+d/Gk3i7i6tvxE4LyLhgGOeu9ELPXzLFAVHJrkNrZreUFfN28S9l1x27upVSLwp5hlIYFqBm8a8ADRxQJIfszy72ZxrpeKxGR6xnltEbupkbXtkpbQsh6ozhV8kDCni1dcT8F2bsoAKLcdt7AAAAAElFTkSuQmCC" y="101.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="36" x="680" y="166.25">User</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="700" y="184.2988"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="635" y="201.9082">Consumer of service</text><!--MD5=[fed7af9310fe52915377c011f6e6be16]
+entity containerSecAppNet--><rect fill="#993333" height="60.25" style="stroke:#D73027;stroke-width:1.5;" width="194" x="458" y="356.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="170" x="468" y="383.25">Application &amp; Network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="79" x="515.5" y="403.375">Protection</text><!--MD5=[770dfe5f967d070740fef81b9147000d]
+entity containerWeb--><rect fill="#438DD5" height="40.125" style="stroke:#3C7FC0;stroke-width:1.5;" width="124" x="87" y="634.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="104" x="97" y="661.25">Web Services</text><!--MD5=[55ba99472e747bbf76f473c4e82f4f09]
+entity containerApp--><rect fill="#438DD5" height="40.125" style="stroke:#3C7FC0;stroke-width:1.5;" width="86" x="96" y="846.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="66" x="106" y="873.25">Services</text><!--MD5=[0aab1763065f6bd34b5a3f2c63f8376a]
+entity containerStores--><path d="M87.5,1069.6406 C87.5,1059.6406 142,1059.6406 142,1059.6406 C142,1059.6406 196.5,1059.6406 196.5,1069.6406 L196.5,1098.7656 C196.5,1108.7656 142,1108.7656 142,1108.7656 C142,1108.7656 87.5,1108.7656 87.5,1098.7656 L87.5,1069.6406 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M87.5,1069.6406 C87.5,1079.6406 142,1079.6406 142,1079.6406 C142,1079.6406 196.5,1079.6406 196.5,1069.6406 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="89" x="97.5" y="1100.25">Data Stores</text><!--MD5=[0208ab2344e6989b8dd2c60a50da63dc]
+entity secSvc--><rect fill="#993333" height="40.125" style="stroke:#D73027;stroke-width:1.5;" width="211" x="419.5" y="634.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="191" x="429.5" y="661.25">Security and Compliance</text><!--MD5=[7f9f077f0eb2745446f37c965384ce0a]
+entity externalAPI--><rect fill="#999999" height="40.125" style="stroke:#8A8A8A;stroke-width:1.5;" width="115" x="873.5" y="846.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="95" x="883.5" y="873.25">Vendor APIs</text><!--MD5=[30e382dc68ab04d49d3ef5ad3266e605]
+entity dns--><rect fill="#999999" height="40.125" style="stroke:#8A8A8A;stroke-width:1.5;" width="55" x="791.5" y="366.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="35" x="801.5" y="393.25">DNS</text><!--MD5=[882e8716c512773496183ec79f00f08b]
+entity sso--><rect fill="#999999" height="40.125" style="stroke:#8A8A8A;stroke-width:1.5;" width="54" x="687" y="366.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="34" x="697" y="393.25">SSO</text><!--MD5=[e4adbf1b5b704e0626473712fe62674d]
+entity containerAGW--><rect fill="#993333" height="40.125" style="stroke:#D73027;stroke-width:1.5;" width="116" x="687" y="846.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="96" x="697" y="873.25">API Gateway</text><!--MD5=[11ff2ea793bd75af96815953118f4d1f]
+entity floating_legend_alias--><rect height="164.875" style="stroke:#00000000;stroke-width:1.5;fill:none;" width="156" x="760" y="1001.6406"/><rect height="17.6094" style="stroke:none;stroke-width:1.5;fill:none;" width="136" x="770" y="1013.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="770" y="1028.1738">Legend</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="827" y="1028.1738"/><rect fill="#08427B" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1031.25"/><text fill="#073B6F" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1045.7832">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1045.7832"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="796" y="1045.7832">person</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="848" y="1045.7832"/><rect fill="#1168BD" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1048.8594"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1063.3926">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1063.3926"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="796" y="1063.3926">system</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="848" y="1063.3926"/><rect fill="#438DD5" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1066.4688"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1081.002">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1081.002"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="796" y="1081.002">container</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="863" y="1081.002"/><rect fill="#999999" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1084.0781"/><text fill="#8A8A8A" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1098.6113">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1098.6113"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="796" y="1098.6113">external_system</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="906" y="1098.6113"/><rect fill="#993333" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1101.6875"/><text fill="#D73027" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1116.2207">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1116.2207"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="796" y="1116.2207">security control</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="900" y="1116.2207"/><rect fill="#F0E68C" height="17.6094" style="stroke:none;stroke-width:1.5;" width="136" x="770" y="1119.2969"/><text fill="#FF0000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1133.8301">▯</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1133.8301"/><text fill="#66622E" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="796" y="1133.8301">segmentation</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="889" y="1133.8301"/><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="774" y="1151.4395">─</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="792" y="1151.4395"/><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="796" y="1151.4395">flow</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="828" y="1151.4395"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1013.6406" y2="1013.6406"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1031.25" y2="1031.25"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1048.8594" y2="1048.8594"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1066.4688" y2="1066.4688"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1084.0781" y2="1084.0781"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1101.6875" y2="1101.6875"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1119.2969" y2="1119.2969"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1136.9063" y2="1136.9063"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="906" y1="1154.5156" y2="1154.5156"/><line style="stroke:#00000000;stroke-width:1.5;" x1="770" x2="770" y1="1013.6406" y2="1154.5156"/><line style="stroke:#00000000;stroke-width:1.5;" x1="906" x2="906" y1="1013.6406" y2="1154.5156"/><!--MD5=[79773b7ad77bc312cd7d44b84462e7cb]
+link containerSecAppNet to containerWeb--><path d="M457.71,401.2906 C370.32,415.3606 250.49,439.7206 215,471.6406 C169.74,512.3506 155.49,586.5606 151.02,626.4806 " fill="none" id="containerSecAppNet-to-containerWeb" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="150.21,634.4606,153.9952,626.8009,148.0253,626.2007,150.21,634.4606" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="99" x="259" y="460.0977">Filtered Requests</text><!--MD5=[3ad0272d87d754264f039aa828419113]
+link containerWeb to containerApp--><path d="M148.09,674.6506 C146.31,712.0306 142.35,795.2506 140.29,838.4506 " fill="none" id="containerWeb-to-containerApp" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="139.91,846.5306,143.2918,838.6844,137.2987,838.3954,139.91,846.5306" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="58" x="148" y="727.5977">User Input</text><!--MD5=[92e1feec0c9636ee43f7ccf6f2fbbaed]
+link containerApp to containerStores--><path d="M139.27,886.7606 C139.78,923.9106 140.93,1006.1206 141.56,1051.5106 " fill="none" id="containerApp-to-containerStores" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="141.67,1059.5406,144.5554,1051.4986,138.556,1051.5843,141.67,1059.5406" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="112" x="142" y="948.0977">Configurations/Data</text><!--MD5=[bb682cf5d8defaeb1dc52c1fc2eaf3b7]
+link userWeb to dns--><path d="M758.38,214.6806 C766.44,224.8006 773.99,235.6206 780,246.6406 C799.67,282.6906 810.13,329.5206 815.12,358.5806 " fill="none" id="userWeb-to-dns" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="816.44,366.6306,818.116,358.2526,812.1939,359.2164,816.44,366.6306" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="96" x="794" y="267.5977">Name Resolution</text><!--MD5=[a3476cc67d8e41d61583237e6b75a9f5]
+link userWeb to containerSecAppNet--><path d="M652.38,214.8406 C645,225.2906 637.62,236.1606 631,246.6406 C609.62,280.4706 587.99,320.7406 573.31,349.2106 " fill="none" id="userWeb-to-containerSecAppNet" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="569.54,356.5506,575.8609,350.8021,570.5225,348.0633,569.54,356.5506" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="632" y="260.0977">Requests</text><text fill="#008000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="636.5" y="275.1914">[HTTPS]</text><!--MD5=[cb892cdd0f472682d61e6b7031d4846f]
+link userWeb to sso--><path d="M695.75,214.8406 C695.44,225.4406 695.17,236.3606 695,246.6406 C694.77,260.8606 693.75,264.4706 695,278.6406 C697.41,306.0206 703.23,336.8806 707.8,358.4006 " fill="none" id="userWeb-to-sso" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="709.54,366.4506,710.7856,357.9979,704.9205,359.2631,709.54,366.4506" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="79" x="696" y="267.5977">Authenticaton</text><!--MD5=[614e89195f7665eb646e3635f7c09778]
+link systemApp to containerAGW--><path d="M267.5697,659.3445 C267.7873,659.4385 268.0087,659.5342 268.2339,659.6315 C270.0362,660.4103 272.0859,661.2959 274.3685,662.2822 C283.4989,666.2274 296.3552,671.7827 312.003,678.5441 C343.2984,692.0669 385.7594,710.4144 431.9088,730.3556 C524.2075,770.2381 631.26,816.4956 693.25,843.2806 " fill="none" id="systemApp-to-containerAGW" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="700.8,846.5406,694.655,840.6044,692.2669,846.1087,700.8,846.5406" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="446" y="720.0977">Requests</text><text fill="#008000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="450.5" y="735.1914">[HTTPS]</text><!--MD5=[22cd1dadc523e4ac0ab7aab58b91c32f]
+link containerAGW to externalAPI--><path d="M748.67,846.5006 C755.21,817.2106 771.95,763.8206 810,740.6406 C831.25,727.6906 844.06,728.9006 866,740.6406 C902.26,760.0406 918.87,807.7906 926.04,838.6106 " fill="none" id="containerAGW-to-externalAPI" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="927.75,846.4406,928.9808,837.9857,923.1179,839.2612,927.75,846.4406" style="stroke:#008000;stroke-width:1.0;"/><text fill="#008000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="811" y="720.0977">Requests</text><text fill="#008000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="815.5" y="735.1914">[HTTPS]</text><!--MD5=[ae878d2a29b5674af62bad9419fdb5f6]
+link secSvc to systemApp--><path d="M419.33,654.6406 C383.745,654.6406 345.43,654.6406 315.1813,654.6406 C300.0569,654.6406 286.9491,654.6406 277.2073,654.6406 C274.7719,654.6406 272.5469,654.6406 270.5533,654.6406 C269.5565,654.6406 268.6176,654.6406 267.7391,654.6406 C267.5195,654.6406 267.3037,654.6406 267.0917,654.6406 " fill="none" id="secSvc-to-systemApp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="267.0917,654.6406,275.0917,657.6406,275.0917,651.6406,267.0917,654.6406" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="121" x="277.43" y="633.0977">Logging, Compliance,</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="324.93" y="648.1914">Audit</text><!--MD5=[bd28aa7a73dd03f98cb63735a32c24ea]
+link containerSecAppNet to sso--><!--MD5=[844661cb24e6156dbc7153b3950e7680]
+link boundarySvcs to floating_legend_alias--><!--MD5=[c59c4feb7cf7db88ab62e9f2ec5284da]
 @startuml CloudSecurity_Containers
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-
+AddElementTag("security_controls", $fontColor="#ffffff", $borderColor="#d73027", $bgColor="#993333",$legendText="security control")
+UpdateElementStyle("System",$fontColor="#ffffff", $bgColor="#66ccff")
+AddElementTag("sec",$borderColor="Red",$legendText="segmentation")
+AddRelTag("flow", $textColor="Green", $lineColor="Green")
+AddRelTag("sec", $textColor="#993333")
+AddRelTag("note", $textColor="Black")
 HIDE_STEREOTYPE()
-Boundary(title,"Cloud Security Container Diagram (C4 Model)")
+'skinparam nodesep 1
+'skinparam ranksep 1
 
-System_Boundary(boundaryCloud,"Public") {
-    System(serviceCloud,"Services","Software interfaces providing information and access to functions",$link="CloudSecurity_Components.svg")
+
+Title Cloud Security Container Diagram (C4 Model)
+
+Boundary(boundaryUntrusted,"Untrusted/Internet"){
+    Person(userWeb, "User", "Consumer of service")
 }
 
+Boundary(boundaryCloud,"Cloud Services") {
+    Container(containerSecAppNet,"Application & Network Protection",$tags="security_controls")
+    System(systemApp,"Web Application",$tags="lighten"){
+        Boundary(boundaryUX,"Frontend","User Experience",$tags="sec"){
+        Container(containerWeb,"Web Services")
+        
+        }
+        Boundary(boundaryApp,"Backend","Business Logic",$tags="sec"){
+            Container(containerApp,"Services") 
+        }
+        Boundary(boundaryData,"Data","Information Stores",$tags="sec"){
+           ContainerDb(containerStores,"Data Stores")    
+        }
+    }
+    Boundary(boundaryAdmin,"Management Services"){
+        Container(secSvc,"Security and Compliance", $tags="security_controls")
+    }
+
+    Rel(containerSecAppNet,containerWeb,"Filtered Requests",$tags="flow")
+    Rel(containerWeb,containerApp,"User Input",$tags="flow")
+    Rel(containerApp,containerStores,"Configurations/Data",$tags="flow")
+}
+
+System_Ext(dns,"DNS",$tags="security_controls_ext")
+System_Ext(sso,"SSO",$tags="security_controls_ext")
+Boundary(boundarySvcs,"External Services"){
+    System_Ext(externalAPI,"Vendor APIs")
+}
+Container(containerAGW,"API Gateway",$tags="security_controls")
+
+Rel(userWeb,dns,"Name Resolution",$tags="flow")
+Rel(userWeb,containerSecAppNet,"Requests","HTTPS",$tags="flow")
+Rel(userWeb,sso,"Authenticaton",$tags="security_controls",$tags="flow")
+Rel(systemApp,containerAGW,"Requests","HTTPS",$tags="flow")
+Rel_R(containerAGW,externalAPI,"Requests","HTTPS",$tags="flow")
+Rel_R(secSvc,systemApp,"Logging, Compliance, Audit")
+
+Lay_R(containerSecAppNet,sso)
+SHOW_FLOATING_LEGEND()
+Lay_D(boundarySvcs,LEGEND())
 @enduml
 
 @startuml CloudSecurity_Containers
@@ -974,14 +1050,153 @@ skinparam person<<external_container>> {
 
 
 
-
-hide stereotype
-rectangle "==Cloud Security Container Diagram (C4 Model)" <<boundary>> as title 
-
-rectangle "==Public\n<size:12>[System]</size>" <<boundary>> as boundaryCloud  {
-    rectangle "==Services\n\n Software interfaces providing information and access to functions" <<system>> as serviceCloud [[CloudSecurity_Components.svg]]
+skinparam rectangle<<security_controls>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #993333
+    BorderColor #d73027
+}
+skinparam database<<security_controls>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #993333
+    BorderColor #d73027
+}
+skinparam queue<<security_controls>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #993333
+    BorderColor #d73027
+}
+skinparam actor<<security_controls>> {
+    StereotypeFontColor #993333
+    FontColor #993333
+    BackgroundColor #993333
+    BorderColor #d73027
+}
+skinparam person<<security_controls>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #993333
+    BorderColor #d73027
 }
 
+
+skinparam rectangle<<System>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #66ccff
+}
+skinparam database<<System>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #66ccff
+}
+skinparam queue<<System>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #66ccff
+}
+skinparam actor<<System>> {
+    StereotypeFontColor #66ccff
+    FontColor #66ccff
+    BackgroundColor #66ccff
+}
+skinparam person<<System>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #66ccff
+}
+
+
+skinparam rectangle<<sec>> {
+    BorderColor Red
+}
+skinparam database<<sec>> {
+    BorderColor Red
+}
+skinparam queue<<sec>> {
+    BorderColor Red
+}
+skinparam actor<<sec>> {
+    BorderColor Red
+}
+skinparam person<<sec>> {
+    BorderColor Red
+}
+
+
+skinparam arrow<<flow>> {
+    Color Green;text:Green
+}
+
+skinparam arrow<<sec>> {
+    Color ;text:993333
+}
+
+skinparam arrow<<note>> {
+    Color ;text:Black
+}
+
+hide stereotype
+
+
+Title Cloud Security Container Diagram (C4 Model)
+
+rectangle "==Untrusted/Internet" <<boundary>> as boundaryUntrusted {
+    rectangle "<$person>\n==User\n\n Consumer of service" <<person>> as userWeb 
+}
+
+rectangle "==Cloud Services" <<boundary>> as boundaryCloud  {
+    rectangle "==Application & Network Protection" <<security_controls>><<container>> as containerSecAppNet 
+    rectangle "==Web Application" <<lighten>><<system>> as systemApp {
+        rectangle "==Frontend\n<size:12>[User Experience]</size>" <<sec>><<boundary>> as boundaryUX {
+        rectangle "==Web Services" <<container>> as containerWeb 
+        
+        }
+        rectangle "==Backend\n<size:12>[Business Logic]</size>" <<sec>><<boundary>> as boundaryApp {
+            rectangle "==Services" <<container>> as containerApp  
+        }
+        rectangle "==Data\n<size:12>[Information Stores]</size>" <<sec>><<boundary>> as boundaryData {
+           database "==Data Stores" <<container>> as containerStores     
+        }
+    }
+    rectangle "==Management Services" <<boundary>> as boundaryAdmin {
+        rectangle "==Security and Compliance" <<security_controls>><<container>> as secSvc 
+    }
+
+    containerSecAppNet - ->> containerWeb <<flow>> : **Filtered Requests**
+    containerWeb - ->> containerApp <<flow>> : **User Input**
+    containerApp - ->> containerStores <<flow>> : **Configurations/Data**
+}
+
+rectangle "==DNS" <<security_controls_ext>><<external_system>> as dns 
+rectangle "==SSO" <<security_controls_ext>><<external_system>> as sso 
+rectangle "==External Services" <<boundary>> as boundarySvcs {
+    rectangle "==Vendor APIs" <<external_system>> as externalAPI 
+}
+rectangle "==API Gateway" <<security_controls>><<container>> as containerAGW 
+
+userWeb - ->> dns <<flow>> : **Name Resolution**
+userWeb - ->> containerSecAppNet <<flow>> : **Requests**\n//<size:12>[HTTPS]</size>//
+userWeb - ->> sso <<flow>> : **Authenticaton**
+systemApp - ->> containerAGW <<flow>> : **Requests**\n//<size:12>[HTTPS]</size>//
+containerAGW -RIGHT->> externalAPI <<flow>> : **Requests**\n//<size:12>[HTTPS]</size>//
+secSvc -RIGHT->> systemApp : **Logging, Compliance, Audit**
+
+containerSecAppNet -[hidden]R- sso
+hide stereotype
+rectangle floating_legend_alias<<legendArea>> [
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#08427B><color:#073B6F> <U+25AF></color> <color:#FFFFFF> person </color> |
+|<#1168BD><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> system </color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external_system </color> |
+|<#993333><color:#d73027> <U+25AF></color> <color:#ffffff> security control </color> |
+|<#khaki><color:Red> <U+25AF></color> <color:#66622E> segmentation </color> |
+|<color:Green> <U+2500></color> <color:Green> flow </color> |
+]
+boundarySvcs -[hidden]D- floating_legend_alias
 @enduml
 
 PlantUML version 1.2022.0(Tue Jan 11 09:16:42 MST 2022)
