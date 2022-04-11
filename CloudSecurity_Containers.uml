@@ -1,26 +1,61 @@
 @startuml CloudSecurity_Containers
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-
+AddElementTag("security_controls", $fontColor="#ffffff", $borderColor="#d73027", $bgColor="#993333",$legendText="security control")
+UpdateElementStyle("System",$fontColor="#ffffff", $bgColor="#66ccff")
+AddElementTag("sec",$borderColor="Red",$legendText="segmentation")
+AddRelTag("flow", $textColor="Green", $lineColor="Green")
+AddRelTag("sec", $textColor="#993333")
+AddRelTag("note", $textColor="Black")
 HIDE_STEREOTYPE()
-SHOW_FLOATING_LEGEND()
+'skinparam nodesep 1
+'skinparam ranksep 1
+
 
 Title Cloud Security Container Diagram (C4 Model)
 
-Boundary(boundaryUntrusted,"Untrusted"){
+Boundary(boundaryUntrusted,"Untrusted/Internet"){
     Person(userWeb, "User", "Consumer of service")
 }
 
-Boundary(boundaryCloud,"Public Cloud") {
-    System_Ext(dns,"DNS")
-    Container(containerWeb,"Web Services")
-    Container(containerSecAppNet,"Application & Network Protection")
-    BiRel(containerSecAppNet,containerWeb,"Safe Data")
-    Boundary(boundaryAPI,"Business Logic"){
-        Container(containerAPI,"APIs")    
+Boundary(boundaryCloud,"Cloud Services") {
+    Container(containerSecAppNet,"Application & Network Protection",$tags="security_controls")
+    System(systemApp,"Web Application",$tags="lighten"){
+        Boundary(boundaryUX,"Frontend","User Experience",$tags="sec"){
+        Container(containerWeb,"Web Services")
+        
+        }
+        Boundary(boundaryApp,"Backend","Business Logic",$tags="sec"){
+            Container(containerApp,"Services") 
+        }
+        Boundary(boundaryData,"Data","Information Stores",$tags="sec"){
+           ContainerDb(containerStores,"Data Stores")    
+        }
     }
-    BiRel(containerWeb,containerAPI,"REST/SOAP")
+    Boundary(boundaryAdmin,"Management Services"){
+        Container(secSvc,"Security and Compliance", $tags="security_controls")
+    }
+
+    Rel(containerSecAppNet,containerWeb,"Filtered Requests",$tags="flow")
+    Rel(containerWeb,containerApp,"User Input",$tags="flow")
+    Rel(containerApp,containerStores,"Configurations/Data",$tags="flow")
 }
 
-Rel(userWeb,boundaryCloud,"Requests")
+System_Ext(dns,"DNS",$tags="security_controls_ext")
+System_Ext(sso,"SSO",$tags="security_controls_ext")
+Boundary(boundarySvcs,"External Services"){
+    System_Ext(externalAPI,"Vendor APIs")
+}
+Container(containerAGW,"API Gateway",$tags="security_controls")
+
+Rel(userWeb,dns,"Name Resolution",$tags="flow")
+Rel(userWeb,containerSecAppNet,"Requests","HTTPS",$tags="flow")
+Rel(userWeb,sso,"Authenticaton",$tags="security_controls",$tags="flow")
+Rel(systemApp,containerAGW,"Requests","HTTPS",$tags="flow")
+Rel_R(containerAGW,externalAPI,"Requests","HTTPS",$tags="flow")
+Rel_R(secSvc,systemApp,"Logging, Compliance, Audit")
+
+Lay_R(containerSecAppNet,sso)
+SHOW_FLOATING_LEGEND()
+Lay_D(boundarySvcs,LEGEND())
 @enduml
